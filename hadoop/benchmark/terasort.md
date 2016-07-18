@@ -1,4 +1,6 @@
-JAR='/usr/hdp/current/hadoop-mapreduce-client/hadoop-mapreduce-examples.jar'
+
+~~~
+JAR='/usdfdsfdssr/hdp/current/hadoop-mapreduce-client/hadoop-mapreduce-examples.jar'
 
 # 1TB
 SIZE=10000000000
@@ -24,4 +26,4 @@ echo 'terasort'
 echo '#######################################################'
 hadoop dfs -rm -r -skipTrash /tmp/terasort-output-${SIZE}
 time hadoop jar ${JAR} terasort -Dmapred.reduce.tasks=24 /tmp/terasort-input-${SIZE} /tmp/terasort-output-${SIZE}
-
+~~~
